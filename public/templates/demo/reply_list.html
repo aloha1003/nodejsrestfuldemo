@@ -1,0 +1,14 @@
+<div id="reply_list">
+    <div class="header">
+      <span class="col_fade"> {{=count}}&nbsp; Replys</span>
+    </div>
+    <div class="rowtainer">
+   {{ _.each(list,function(reply,key){  }}
+    
+     {{=_.template(onereplyTemplate,{reply:reply,avatar:avatar,commonDir:commonDir})}}
+    
+
+   {{ }); }}
+  </div>
+</div>
+  <div id="reply"></div>

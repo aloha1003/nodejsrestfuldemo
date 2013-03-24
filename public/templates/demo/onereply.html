@@ -1,0 +1,14 @@
+<div class="reply_row">
+     <div class="user_avatar avatar_small">
+     </div>
+     <span class="reply_author">
+ {{=_.template(avatar,{u:reply.user,size:'small'})}}
+    
+
+     </span>
+     <span class="col_fade">
+      在 {{= _.template(commonDir,{time:reply.updatetime}) }}回覆
+      
+    </span>
+     <div class="reply_content">{{=reply.content}}</div>
+   </div>

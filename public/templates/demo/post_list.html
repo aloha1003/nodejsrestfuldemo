@@ -1,0 +1,26 @@
+ <table>
+    <tr>
+      <th>Title</th>
+      <th>Edit/Delete</th>
+     
+    </tr>
+    {{ _.each(posts,function(post,key,list){  }}
+    {{if (post._id.$id != undefined) { }} 
+
+      {{ var pid = post._id.$id}}
+    {{ } else { }}
+ {{ var pid = post._id}}
+    {{ } }} 
+    <tr>
+      <td><a href="#post/{{=pid }}">{{=post.title}}</a></td>
+      <td>
+         <a class="update-link" href="#post/edit/{{=pid }}" title="Update this todo item">
+      Edit
+    </a> /
+     <a class="del-btn" href="#post/del/{{=pid }}" title="Delete this todo item">
+        Delete
+     </a>
+      </td>    
+    </tr>
+    {{ }); }}
+  </table>

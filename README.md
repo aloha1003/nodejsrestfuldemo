@@ -1,4 +1,13 @@
-nodejsrestfuldemo
-=================
+backbone with restful demo
 
-RestFul in NodeJS + Backbone.js Demo
+Required :
+
+Mongodb、 redis、node.js
+
+Demo :
+Run Restful server : 
+node server.js
+
+Client Demo:
+
+node app.js

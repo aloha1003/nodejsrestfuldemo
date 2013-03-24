@@ -1,0 +1,20 @@
+{
+  "name": "cross-domain",
+  "subdomain": "cross-domain",
+  "scripts": {
+    "start": "server.js"
+  },
+  "version": "0.0.0-20",
+  "engines": {
+    "node": "0.6.x"
+  },
+  "dependencies": {
+    "express": "2.5.x",
+    "path"  :  "0.4.9",
+    "redis"  : "0.8",
+    "mongodb" :  "1.2.x",
+    "mongoskin" : "0.5",
+    "ejs" : "0.8.3",
+    "connect": "2.2.x"
+  }
+}
