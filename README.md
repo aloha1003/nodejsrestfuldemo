@@ -4,8 +4,12 @@ Required :
 
 Mongodb、 redis、node.js
 
-Demo :
+Demo install Steps :
+
+npm install 
+
 Run Restful server : 
+
 node server.js
 
 Client Demo:
