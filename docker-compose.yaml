@@ -1,0 +1,28 @@
+redis:
+  restart: always
+  container_name: redis
+  image: redis:alpine
+  ports:
+    - "6379:6379"
+  volumes:
+    - redis_datadir:/data
+mongo:
+    image: mvertes/alpine-mongo
+    container_name: mongo
+    ports:
+      - "27017:27017"
+      - "28017:28017"
+    volumes:
+        - mongo_datadir:/data/db
+node_server:
+    ports:
+      - "3000:3000"
+    build: server
+    links:
+      - redis
+      - mongo
+node_client:
+    ports:
+      - "3300:3300"
+    build: client
+

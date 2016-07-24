@@ -2,7 +2,7 @@
 
 
 require.config({
-   urlArgs: "bust="+(new Date()).getTime(),
+   
   paths: {
     config: 'config',
     jquery: 'libs/jquery/jquery-min',

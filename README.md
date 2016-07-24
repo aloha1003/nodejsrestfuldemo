@@ -1,17 +1,9 @@
-backbone with restful demo
+Node.js with Backbone with restful demo on Docker
 
-Required :
+Database:
+    Redis、 Mongodb
+How to Run:
+    
+    bash# docker-compose up -d
 
-Mongodb、 redis、node.js
-
-Demo install Steps :
-
-npm install 
-
-Run Restful server : 
-
-node server.js
-
-Client Demo:
-
-node app.js
+    visit http://localhost:3000
